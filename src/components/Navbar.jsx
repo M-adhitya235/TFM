@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaSearch, FaShoppingCart } from 'react-icons/fa'; // Import FaShoppingCart icon
+import { FaSearch, FaShoppingCart } from 'react-icons/fa';
 
 function Navbar({ isDashboard }) { // Menggunakan prop isDashboard untuk menentukan apakah ini halaman dashboard
   return (
@@ -21,7 +21,9 @@ function Navbar({ isDashboard }) { // Menggunakan prop isDashboard untuk menentu
         </li>
         {isDashboard && (
           <li className="text-black mt-1 flex items-center">
-            <FaShoppingCart className="text-red-400 mr-4" size={24} />
+             <Link to="/cart"> 
+              <FaShoppingCart className="text-red-400 mr-4" size={24} />
+            </Link>
           </li>
         )}
       </ul>

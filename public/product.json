@@ -1,0 +1,75 @@
+[
+    {
+      "id": "kpop001",
+      "title": "STRAY KIDS STRAY KIDS Official Light Stick Ver.2",
+      "kategori": "K-pop",
+      "harga":  "Rp 1.259.000,00",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSSeqE5s6CiiiwX9Xo5BWEnTzhDl23xL6_zb0zNBOeMuDTbnATouqHdV3q_l6wdkkfsP75m6w_cINUyRRb1YoASNZ9oPu1EgndbizXnFWPg7AZFFlRj_1Eo&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "kpop002",
+      "title": "Album BTS - Map of the Soul: 7",
+      "kategori": "K-pop",
+      "harga": "Rp 385.000,00",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRKgdgqUV4DYQ4sOuHWsKJUznUINijchspE08LJBbM_AjLX3um0IxXZapJ2m0mNIBmHscHBJFJivtv8ZZoW8n36Kr6le5ANbVjoR5PJUxc&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "kpop003",
+      "title": "Light Stick Super Junior",
+      "kategori": "K-pop",
+      "harga": "Rp 899.000,00",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRsTFIL8T49NU9C41N3nwtW_HmJU9Hf4GqjfIQnG6-vBVTpE3Ko9I6vrOmSqyK_Xs3LzT5JqpU3yg-4vsPxrFH7UYP2K5fnay_D_zW1QxLgziFY3Npc8VSdPg&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "anime001",
+      "title": "Keychain Anya",
+      "kategori": "Anime",
+      "harga": "Rp 20.000,00",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTdX2B-5O-toBAhPhW3z_9PLFTyUfgllAskNjUL7njgnHAVeMiWi9O5IRFxdJnuidRobFcKZoavIJx4jJiTNzLYtsIjOYkYjSuGEB-jXPs&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "anime002",
+      "title": "Kapal One Piece Thousand Sunny Bandai KWS Size 25cm",
+      "kategori": "Anime",
+      "harga": "Rp 225.000,00",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRP2APXX5WgrUqSNly43jCrx7mleiE-DHsxfW6_K5YlF6I1R6nzafko_PLMQTe4I4UH6Ggc9gOwpTsQzxNwYbU6N9jrbyuiRG3b0dkVKDANrk-J_64JBcGV&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "anime003",
+      "title": "T-shirt Attack on Titan",
+      "kategori": "Anime",
+      "harga": "Rp 110.000,00",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRNEJatxRGokAsFvIl5PpRVefdalp8oyq2LkSF-etbhkMO5Nbwtcodd-YFOJNbeYXyE1sr4WGQy_EHtu8h3dKx2Swet1TZJdQD_u4tahnqSnC1CrL5ItQjfdA&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "western001",
+      "title": "Harry Potter Box Set",
+      "kategori": "Western",
+      "harga": "Rp 1.197.000,00",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSLY0-kFNBq6tgpcB5owd7JysIcNC82Gh6DYFyrm6yNNZXnlfPgsA9ycbg96YKZF7v8o_EElz4cVv6Ze1Rnjfi7wcXJ4xMizbEgXX50nAN7&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "western002",
+      "title": "Taylor Swift - The Eras Tour | Merch T shirt",
+      "kategori": "Western",
+      "harga": "Rp 89.900,00",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSJPJjo_WVmC8tVmbBBIKfZalbI_KXHP01W9dpLMLVIWnO699K4D_ymASHk5EpQ82xcvER9TBGQijGi3u9cXj-GC9s83nKHjT1__mUFsov6&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "western003",
+      "title": "Ariana Grande Tshirt",
+      "kategori": "Western",
+      "harga": "Rp 123.750,00",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQM9u50Nf0s590Q-dRBwFgIymyGNkl3fIWbY15yKmhUy_pk0seOHMaxSFt_BvAaoR7ZG17jRqva7o8N6mG406dBglY0Q_B6OFcRe-gZ8uI-&usqp=CAE",
+      "status": "tersedia"
+    }
+  ]
+  

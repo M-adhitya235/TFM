@@ -1,47 +1,40 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../../components/Navbar";
-import CardComponent from "../../components/CardCompo";
-import Footer from "../../components/Footer";
+import React, { useState } from "react";
 
-function Wishlist() {
+const Wishlist = () => {
+  const [wishlist, setWishlist] = useState([]);
+
+  const addToWishlist = (product) => {
+    setWishlist([...wishlist, product]);
+  };
+
+  const removeFromWishlist = (index) => {
+    const newWishlist = [...wishlist];
+    newWishlist.splice(index, 1);
+    setWishlist(newWishlist);
+  };
+
   return (
-    <div className="min-h-screen bg-white-200">
-      <Navbar />
-      <div className="container mx-auto px-4 py-8">
-      <h1 className="text-xl text-gray-800 font-bold mb-4 ml-4 relative">
-          <span className="absolute text-black px-2 py-1" style={{ right: "-2.5rem", top: "0.3rem", fontSize: "1.0rem",
-              boxShadow: "0 0 0 2px black"}}>
-            Move ALL to Cart
-          </span>
-          Wishlist
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Card List */}
-          <CardComponent imageUrl="https://www.koreandae.com/image-product/img3413-1605778321.jpg" title="SUPER JUNIOR - ALBUM VOL.9 [TIME SLIP]" description="Rp 295.000" style={{ marginTop: "2rem", marginbottom: "3rem" }} />
-          <CardComponent imageUrl="https://www.koreandae.com/image-product/img3413-1605778321.jpg" title="SUPER JUNIOR - ALBUM VOL.9 [TIME SLIP]" description="Rp 295.000" style={{ marginTop: "2rem", marginbottom: "3rem" }} />
-          <CardComponent imageUrl="https://www.koreandae.com/image-product/img3413-1605778321.jpg" title="SUPER JUNIOR - ALBUM VOL.9 [TIME SLIP]" description="Rp 295.000" style={{ marginTop: "2rem", marginbottom: "3rem" }} />
-        </div>
-      </div>
-      <div className="container mx-auto px-4 py-8">
-      <h1 className="text-xl text-gray-800 font-bold mb-4 ml-4 relative">
-      <Link to="/" 
-            className="absolute text-black px-2 py-1"
-            style={{right: "-2.5rem", top: "0.3rem", fontSize: "1.0rem", boxShadow: "0 0 0 2px black", textDecoration: "none", cursor: "pointer"}}>
-            See ALL
-          </Link>
-          Just For You
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Card List */}
-          <CardComponent imageUrl="https://www.koreandae.com/image-product/img3413-1605778321.jpg" title="SUPER JUNIOR - ALBUM VOL.9 [TIME SLIP]" description="Rp 295.000" style={{ marginTop: "2rem", marginbottom: "3rem" }} />
-          <CardComponent imageUrl="https://www.koreandae.com/image-product/img3413-1605778321.jpg" title="SUPER JUNIOR - ALBUM VOL.9 [TIME SLIP]" description="Rp 295.000" style={{ marginTop: "2rem", marginbottom: "3rem" }} />
-          <CardComponent imageUrl="https://www.koreandae.com/image-product/img3413-1605778321.jpg" title="SUPER JUNIOR - ALBUM VOL.9 [TIME SLIP]" description="Rp 295.000" style={{ marginTop: "2rem", marginbottom: "3rem" }} />
-        </div>
-      </div>
-      <Footer />
+    <div className="bg-white p-6 rounded-lg">
+      <h2 className="text-2xl font-semibold mb-4">Wishlist</h2>
+      {wishlist.length === 0 ? (
+        <p className="text-gray-700">Your wishlist is empty.</p>
+      ) : (
+        <ul>
+          {wishlist.map((product, index) => (
+            <li key={index} className="flex justify-between items-center mb-2">
+              <span>{product.title}</span>
+              <button
+                onClick={() => removeFromWishlist(index)}
+                className="text-red-500 hover:text-red-700"
+              >
+                Remove
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
-}
+};
 
 export default Wishlist;
