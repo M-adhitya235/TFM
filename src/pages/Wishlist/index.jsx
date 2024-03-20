@@ -30,7 +30,7 @@ function Wishlist() {
             style={{right: "-2.5rem", top: "0.3rem", fontSize: "1.0rem", boxShadow: "0 0 0 2px black", textDecoration: "none", cursor: "pointer"}}>
             See ALL
           </Link>
-          Just For You
+          Just For YOU
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Card List */}
