@@ -1,10 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../../components/Navbar";
-import CardComponent from "../../components/CardCompo";
-import Footer from "../../components/Footer";
+import React, { useState } from "react";
 
-function Wishlist() {
+const Wishlist = () => {
+  const [wishlist, setWishlist] = useState([]);
+
+  const addToWishlist = (product) => {
+    setWishlist([...wishlist, product]);
+  };
+
+  const removeFromWishlist = (index) => {
+    const newWishlist = [...wishlist];
+    newWishlist.splice(index, 1);
+    setWishlist(newWishlist);
+  };
+
   return (
     <div className="min-h-screen bg-white-200">
       <Navbar />
@@ -42,6 +50,6 @@ function Wishlist() {
       <Footer />
     </div>
   );
-}
+};
 
 export default Wishlist;

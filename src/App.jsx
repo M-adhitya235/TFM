@@ -2,6 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/login/';
 import Dashboard from './pages/dashboard';
 import RegisterForm from './pages/register';
+import About from './pages/about';
+import Wishlist from './pages/Wishlist';
+import Cart from './pages/cart';
+import Contact from './pages/contact';
 
 export default function App() {
   return (
@@ -11,6 +15,11 @@ export default function App() {
           <Route path="/" element={<Dashboard />} /> 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<RegisterForm />} />   
+          <Route path="/register" element={<RegisterForm />} />
+          <Route path="/about" element={<About />} />  
+          <Route path="/wishlist" element={<Wishlist />} />  
+          <Route path="/contact" element={<Contact />} />  
+          <Route path="/cart" element={<Cart />} /> 
           {/* <Route path="/register" element={<Register />} /> */}
         </Routes>
       </Router>

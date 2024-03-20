@@ -1,4 +1,5 @@
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaTwitter, FaLinkedin, FaPinterest } from "react-icons/fa";
+import Logo from "/src/assets/tfmmm.png"; 
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         <h2 className="text-lg font-semibold">Treasure Fans Mart</h2>
           </div>
           <img
-            src="/src/assets/tfmmm.png"
+            src={Logo}
             alt="Logo"
             className="h-24 w-24 mt-2" 
           />
