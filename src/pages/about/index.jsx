@@ -12,7 +12,7 @@ import profile6 from '../../assets/yossi.jpg';
 function About() {
   return (
     <>
-      <Navbar />
+      <Navbar isDashboard={true} isLoggedIn={true} />
       <div className="flex justify-center items-center flex-wrap mt-8">
         <div className="grid grid-cols-3 gap-4">
           <ProfileBox 

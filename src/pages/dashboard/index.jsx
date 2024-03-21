@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import CardComponent from "../../components/CardCompo";
+import Footer from "../../components/Footer";
 
 function Dashboard() {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
   const [wishlist, setWishlist] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   useEffect(() => {
     fetch('/product.json')
@@ -29,8 +31,8 @@ function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-white-200">
-      <Navbar isDashboard={true} />
+    <div className="min-h-screen bg--200">
+      <Navbar isDashboard={true} isLoggedIn={isLoggedIn} />
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-xl text-gray-800 font-bold mb-4 ml-4">Today</h1>
         {/* Menampilkan pesan kesalahan jika terjadi */}
@@ -45,6 +47,7 @@ function Dashboard() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

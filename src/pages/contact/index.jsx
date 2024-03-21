@@ -6,7 +6,7 @@ import mailIcon from "../../assets/mail.png";
 const Contact = () => {
   return (
     <div className="contact">
-      <Navbar />
+      <Navbar isDashboard={true} isLoggedIn={true} />
       <div className="flex justify-start mt-20 ml-8">
         <span className="mx-1">Home</span>
         <span className="mx-1">/</span>

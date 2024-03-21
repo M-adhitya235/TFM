@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaSearch, FaShoppingCart } from 'react-icons/fa';
+import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa';
 
-function Navbar({ isDashboard }) { // Menggunakan prop isDashboard untuk menentukan apakah ini halaman dashboard
+function Navbar({ isDashboard, isLoggedIn }) { // Menggunakan prop isDashboard untuk menentukan apakah ini halaman dashboard
+  console.log("Navbar props:", isDashboard, isLoggedIn)
   return (
     <nav className="flex items-center justify-between bg-white p-4 border-b border-gray-300">
       <div className="text-black text-2xl font-bold ml-14 mb-1">Treasure Fans Mart</div>
@@ -21,8 +22,15 @@ function Navbar({ isDashboard }) { // Menggunakan prop isDashboard untuk menentu
         </li>
         {isDashboard && (
           <li className="text-black mt-1 flex items-center">
-             <Link to="/cart"> 
+            <Link to="/cart">
               <FaShoppingCart className="text-red-400 mr-4" size={24} />
+            </Link>
+          </li>
+        )}
+        {isLoggedIn && (
+          <li className="text-black mt-1">
+            <Link to="/account"> {/* Link to account for user icon */}
+              <FaUser className="text-gray-500 mr-4" size={24} />
             </Link>
           </li>
         )}

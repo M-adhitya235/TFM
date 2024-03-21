@@ -66,7 +66,7 @@ const LoginForm = () => {
         <p className="mt-2 text-center space-x-2.5">
           Belum Daftar ?
           <Link to="/register" className="ml-2 italic hover:text-blue-400">
-            Sign In
+            Sign Up
           </Link>
         </p>
       </div>  
