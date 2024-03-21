@@ -4,6 +4,7 @@ import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa';
 
 function Navbar({ isDashboard, isLoggedIn }) { // Menggunakan prop isDashboard untuk menentukan apakah ini halaman dashboard
   console.log("Navbar props:", isDashboard, isLoggedIn)
+  
   return (
     <nav className="flex items-center justify-between bg-white p-4 border-b border-gray-300">
       <div className="text-black text-2xl font-bold ml-14 mb-1">Treasure Fans Mart</div>

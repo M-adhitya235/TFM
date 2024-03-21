@@ -5,6 +5,8 @@ import Footer from "../../components/Footer";
 
 function Dashboard() {
   const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
   const [error, setError] = useState(null);
   const [wishlist, setWishlist] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(true);
@@ -28,6 +30,17 @@ function Dashboard() {
 
   const addToWishlist = (product) => {
     setWishlist([...wishlist, product]);
+  };
+
+  const handleSearch = (event) => {
+    const searchValue = event.target.value.toLowerCase();
+    setSearchTerm(searchValue);
+
+    // Filter products based on search term
+    const filtered = products.filter((product) =>
+      product.name.toLowerCase().includes(searchValue)
+    );
+    setFilteredProducts(filtered);
   };
 
   return (
