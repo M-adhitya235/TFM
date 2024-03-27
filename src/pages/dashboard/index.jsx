@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import CardComponent from "../../components/CardCompo";
+import Footer from "../../components/Footer";
 
 function Dashboard() {
   const [products, setProducts] = useState([]);
@@ -45,6 +46,7 @@ function Dashboard() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
