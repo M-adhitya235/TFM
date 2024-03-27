@@ -1,0 +1,26 @@
+[
+    {
+      "id": "kpop001",
+      "title": "STRAY KIDS STRAY KIDS Official Light Stick Ver.2",
+      "kategori": "K-pop",
+      "harga":  "Rp 1.259.000,00",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSSeqE5s6CiiiwX9Xo5BWEnTzhDl23xL6_zb0zNBOeMuDTbnATouqHdV3q_l6wdkkfsP75m6w_cINUyRRb1YoASNZ9oPu1EgndbizXnFWPg7AZFFlRj_1Eo&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "kpop002",
+      "title": "Album BTS - Map of the Soul: 7",
+      "kategori": "K-pop",
+      "harga": "Rp 385.000,00",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRKgdgqUV4DYQ4sOuHWsKJUznUINijchspE08LJBbM_AjLX3um0IxXZapJ2m0mNIBmHscHBJFJivtv8ZZoW8n36Kr6le5ANbVjoR5PJUxc&usqp=CAE",
+      "status": "tersedia"
+    },
+    {
+      "id": "kpop003",
+      "title": "Light Stick Super Junior",
+      "kategori": "K-pop",
+      "harga": "Rp 899.000,00",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRsTFIL8T49NU9C41N3nwtW_HmJU9Hf4GqjfIQnG6-vBVTpE3Ko9I6vrOmSqyK_Xs3LzT5JqpU3yg-4vsPxrFH7UYP2K5fnay_D_zW1QxLgziFY3Npc8VSdPg&usqp=CAE",
+      "status": "tersedia"
+    }
+]
